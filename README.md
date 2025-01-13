@@ -1,50 +1,32 @@
-# React + TypeScript + Vite
+# Word Guessing Game - Aerospace Trivia
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple word guessing game based on aerospace trivia.
 
-Currently, two official plugins are available:
+## How to Play
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- The goal is to guess words related to aerospace.
+- Each round provides a clue that you should use to guess the word.
+- Have fun while learning new facts about the universe!
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **TypeScript**
+- **React**
+- **Vite**
 
-- Configure the top-level `parserOptions` property like this:
+## How to Run the Project
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/lauraaliceoliveira/guessit.git
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2. Install dependencies:
+    ```bash
+   npm install
+    
+3. Run the project:
+    ```bash
+   npm run dev
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+  This project was created for fun. If you have suggestions or want to contribute, feel free to open a PR or submit an issue!
